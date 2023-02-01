@@ -70,6 +70,7 @@ app.use('/api/v1/orders', orderRouter)
 app.use(notFoundMiddleware)
 app.use(errorHandlerMiddleware)
 
+console.log(process.env.MONGO_URI)
 //server
 const port = process.env.PORT || 4000
 const start = async () => {
