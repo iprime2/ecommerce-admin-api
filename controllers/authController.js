@@ -1,7 +1,6 @@
 const User = require('../models/User')
 const { StatusCodes } = require('http-status-codes')
 const CustomError = require('../errors')
-const { create } = require('../../final/models/Review')
 const { createTokenUser, attachCookiesToResponse } = require('../utils/index')
 
 const register = async (req, res) => {
