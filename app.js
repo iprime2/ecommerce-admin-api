@@ -5,7 +5,7 @@ const express = require('express')
 const router = express.Router()
 const app = express()
 
-const corsOptions = require('./config/corsOptions')
+//const corsOptions = require('./config/corsOptions')
 
 // packages
 const bodyParser = require('body-parser')
@@ -43,6 +43,13 @@ app.use(
     max: 60,
   })
 )
+
+//
+const corsOptions = {
+  origin: 'https://sushil-ecommerce-admin.on.fleek.co/',
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+}
 
 //
 router.get('/', (req, res) => {
