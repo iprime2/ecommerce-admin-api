@@ -46,7 +46,7 @@ app.use(
 
 //
 const corsOptions = {
-  origin: 'https://sushil-ecommerce-admin.on.fleek.co/',
+  origin: 'https://sushil-ecommerce-admin.on.fleek.co',
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 }
